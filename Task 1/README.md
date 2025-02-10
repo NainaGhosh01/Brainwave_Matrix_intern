@@ -1,13 +1,8 @@
-
 # LAMP Stack Deployment on AWS EC2 Instance
 
 This README provides instructions to create an AWS EC2 instance, configure a LAMP environment, and deploy sample PHP code. Follow these steps carefully to complete the assignment.
 
-
-
-
-
-## STEP 1: Launch an EC2 t2.micro Instance
+# STEP 1: Launch an EC2 t2.micro Instance
 
 - Log in to the AWS Management Console.
 
@@ -28,7 +23,7 @@ This README provides instructions to create an AWS EC2 instance, configure a LAM
 - Click Launch Instance and wait for it to initialize.
 
 
-## Step 2: Connect to the EC2 Instance
+# Step 2: Connect to the EC2 Instance
 
 - Go to the EC2 dashboard, find your instance, and copy the Public IP Address.
 
@@ -37,7 +32,7 @@ This README provides instructions to create an AWS EC2 instance, configure a LAM
 ```bash
   ssh -i "your-key.pem" ec2-user@<Public-IP-Address>
 ```
-## Step 3: Configure the LAMP Environment
+# Step 3: Configure the LAMP Environment
 
 - Install Apache
 ```bash
@@ -56,7 +51,7 @@ sudo systemctl restart httpd
 ```
 sudo yum install -y mariadb
 ```
-## Step 4: Deploy Sample PHP Code
+# Step 4: Deploy Sample PHP Code
 
 - Navigate to the web root directory:
 
@@ -78,7 +73,7 @@ echo "Hello, LAMP server is running!";
 ```
 - Save and exit (Ctrl + O, Enter, Ctrl + X).
     
-## Step 5: Test the Deployment
+# Step 5: Test the Deployment
 
 - Open your browser and access the server using:
 ```
